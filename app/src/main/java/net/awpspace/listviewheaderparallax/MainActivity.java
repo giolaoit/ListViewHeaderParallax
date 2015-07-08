@@ -1,12 +1,9 @@
 package net.awpspace.listviewheaderparallax;
 
 import android.graphics.Rect;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
@@ -46,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
 
         mListView.setAdapter(mAdapter);
 
-        mIvHeader = (ImageView) header.findViewById(R.id.listHeaderImage);
+        mIvHeader = (ImageView) header.findViewById(R.id.layout_list_header_iv_image);
         mListView.setOnScrollListener(this);
     }
 
